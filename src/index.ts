@@ -28,6 +28,11 @@ app.use(cors({
 app.use("/api/v1/auth", authRoutes)
 app.use("/api/v1/post", postRoutes)
 
+// bydefault get request ekak liyanawa 
+app.get("/",(req,res) =>{
+    res.send("backend is running")
+})
+
 //app.use((req, res, next) => {
 //    next()
 //})
